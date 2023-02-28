@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="rightpane">
+        <div class="rightheading">
+          <span>Logo</span>
+        </div>
+        <div class="rightmenu">
+          <ul class="menu">
+            <li class="menuitems">
+              <i class="fa-solid fa-square-poll-vertical fa-1x"></i> Dashboard
+            </li>
+            <li class="menuitems">
+              <i class="fa-solid fa-boxes-stacked fa-1x"></i> Inventory
+            </li>
+            <li class="menuitems" onclick="">
+              <i class="fa-solid fa-file-contract"></i>
+              <a href="generateCcr.html">Generate CCR</a>
+            </li>
+            <li class="menuitems">
+              <i class="fa-regular fa-plus"></i> Add Hardware
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="leftpane">
+        <div class="bar">
+          <span class="sftName"> Dashboard </span>
+          <form class="rightbar" action="/pages/LoginPage.html">
+            <span class="userName"> Username </span>
+            <input class="logout" type="submit" value="Logout" />
+          </form>
+        </div>
+        <div class="mainpane">
+          <div class="inventorystatus">
+            <div class="invitem">
+              <!-- todo add icon for invitems <i class="fa-duotone fa-computer-mouse-scrollwheel"></i> -->
+              <h2>24</h2>
+              <span>
+                <i class="fa-solid fa-computer-mouse fa-1x"></i> Mouse
+              </span>
+            </div>
+            <div class="invitem">
+              <h2>4</h2>
+              <span> <i class="fa-solid fa-keyboard fa-1x"></i> Keyboard </span>
+            </div>
+            <div class="invitem">
+              <h2>34</h2>
+              <span> <i class="fa-solid fa-desktop fa-1x"></i> Monitor </span>
+            </div>
+            <div class="invitem">
+              <h2>10</h2>
+              <span>
+                <i class="fa-solid fa-microchip fa-1x"></i> Motherboard</span
+              >
+            </div>
+            <div class="invitem">
+              <h2>14</h2>
+              <span> <i class="fa-solid fa-suitcase fa-1x"></i> Cabinet</span>
+            </div>
+          </div>
+          <div class="recentCcr">
+            <legend class="heading">Recent CCR's :</legend>
+            <ul class="recentccrlist" id="recentCcrList">
+              <li class="ccrs" id="recentsCCRs">
+                <label class="srno">1</label>
+                <label class="ccrno">12</label>
+                <label class="date">22/12/2022</label>
+                <label class="employeename">rohan</label>
+                <label class="partsdetails">Motherboard</label>
+              </li>
+              <li class="ccrs" id="recentsCCRs">
+                <label class="srno">1</label>
+                <label class="ccrno">12</label>
+                <label class="date">22/12/2022</label>
+                <label class="employeename">rohan</label>
+                <label class="partsdetails">Motherboard</label>
+              </li>
+              <li class="ccrs" id="recentsCCRs">
+                <label class="srno">1</label>
+                <label class="ccrno">12</label>
+                <label class="date">22/12/2022</label>
+                <label class="employeename">rohan</label>
+                <label class="partsdetails">Motherboard</label>
+              </li>
+              <li class="ccrs" id="recentsCCRs">
+                <label class="srno">1</label>
+                <label class="ccrno">12</label>
+                <label class="date">22/12/2022</label>
+                <label class="employeename">rohan</label>
+                <label class="partsdetails">Motherboard</label>
+              </li>
+              <li class="ccrs" id="recentsCCRs">
+                <label class="srno">1</label>
+                <label class="ccrno">12</label>
+                <label class="date">22/12/2022</label>
+                <label class="employeename">rohan</label>
+                <label class="partsdetails">Motherboard</label>
+              </li>
+              <li class="ccrs" id="recentsCCRs">
+                <label class="srno">1</label>
+                <label class="ccrno">12</label>
+                <label class="date">22/12/2022</label>
+                <label class="employeename">rohan</label>
+                <label class="partsdetails">Motherboard</label>
+              </li>
+              <li class="ccrs" id="recentsCCRs">
+                <label class="srno">1</label>
+                <label class="ccrno">12</label>
+                <label class="date">22/12/2022</label>
+                <label class="employeename">rohan</label>
+                <label class="partsdetails">Motherboard</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>
