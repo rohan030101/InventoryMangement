@@ -9,10 +9,14 @@ const ccrgenerate = require('./generateccr');
 // const pth = path.join(__dirname, '../public');   
 // console.log(pth)
 app.use(userRouter);
-app.use(ccrgenerate)
+app.use('/generateccr', ccrgenerate)
 const bodyParser = require('body-parser');
 const { json } = require("express");
 //for data from body
+
+// app.get('/', (req, res) => {
+//     res.redirect('/userroute/login');
+// })
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '../public')));

@@ -9,6 +9,7 @@
 body {
   /* background-color: rgb(9, 8, 26); */
 }
+
 h2 {
   font-size: 3rem;
   text-align: center;
@@ -84,6 +85,10 @@ input[type="submit"]:hover {
 }
 
 /*************** Dashboard CSS starts here ******************* */
+a {
+  color: white;
+  text-decoration: none;
+}
 .dashboard {
   display: flex;
   width: 100vw;

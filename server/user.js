@@ -8,21 +8,21 @@ const { json } = require("express");
 user.use(bodyParser.urlencoded({ extended: false }));
 
 user.get('/', (req, res) => {
-    res.redirect('/login');
+    res.redirect('/userroute/login');
 })
 
-user.get('/login', (req, res) => {
+user.get('/userroute/login', (req, res) => {
     res.status(200).sendFile(path.join(__dirname, "../views/loginpage.html"));
     console.log("Homepage")
 
 });
 
-user.post('/loginuser', (req, res) => {
+user.post('/userroute/loginuser', (req, res) => {
     let userName = req.body.username;
     let password = req.body.loginpassword;
     console.log(userName, password);
     if (userName == 'rohanjanrao' && password == "123") {
-        res.redirect('/dashboard');
+        res.redirect('userroute/dashboard');
     }
     else {
         res.send('LoginFailed');
@@ -30,7 +30,11 @@ user.post('/loginuser', (req, res) => {
     res.end();
 });
 
-user.get('/dashboard', (req, res) => {
+user.post('/userroute/ccr', (req, res) => {
+    console.log('Hello')
+})
+
+user.get('/userroute/dashboard', (req, res) => {
     res.status(200).sendFile(path.join(__dirname, '../views/dashboard.html'));
 });
 
